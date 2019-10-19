@@ -10,7 +10,7 @@ function SongViewer(){
     
     useEffect(function () {
         
-        axios.get(`http://10.0.0.8:5000/chords/${id}`)
+        axios.get(`http://localhost:5000/chords/${id}`)
         .then(res => setSong(res.data))
         .catch(err => console.error(err));
     }, [id]);
