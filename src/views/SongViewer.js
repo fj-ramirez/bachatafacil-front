@@ -9,8 +9,7 @@ function SongViewer(){
     let { id } = useParams();
     
     useEffect(function () {
-        
-        axios.get(`http://localhost:5000/chords/${id}`)
+        axios.get(`http://api.bachatafacil.com/chords/${id}`)
         .then(res => setSong(res.data))
         .catch(err => console.error(err));
     }, [id]);

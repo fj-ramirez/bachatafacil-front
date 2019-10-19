@@ -7,7 +7,7 @@ function SongList(props) {
   
     useEffect(function() {
         const fetchData = criteria => {
-            axios.get(`http://localhost:5000/chords?search=${criteria}`)
+            axios.get(`http://api.bachatafacil.com/chords?search=${criteria}`)
             .then(res => {
               setChords(res.data);
             })
