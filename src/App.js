@@ -22,7 +22,7 @@ function App() {
         <Typography style={{fontWeight: 'bold', fontSize: '1.5em'}}>BachataFacil</Typography>
         
         <TextField 
-          style={{...generalStyles.filterTextField, borderRadius: 5}}
+          style={{...generalStyles.filterTextField, marginLeft: "auto", borderRadius: 5}}
           value={filter}
           placeholder="Buscar"
           onChange={handleChange}
